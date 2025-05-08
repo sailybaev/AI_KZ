@@ -1,0 +1,6 @@
+streamlit
+ollama
+chromadb
+sentence-transformers
+beautifulsoup4
+requests
