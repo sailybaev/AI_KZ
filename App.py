@@ -13,7 +13,6 @@ query = st.text_input("Ask a question about the Constitution:")
 if query:
     st.write("🔍 Searching for relevant context...")
     context = search_context(query, collection)
-    st.text_area("Context", context, height=200)
 
     st.write("🧠 Asking LLaMA...")
     answer = ask_llama(context, query)

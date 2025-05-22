@@ -22,6 +22,5 @@ def load_constitution_chunks(chunk_size=500):
     with open(DATA_PATH, "r", encoding="utf-8") as f:
         full_text = f.read()
 
-    # Split into overlapping chunks
     chunks = [full_text[i:i+chunk_size] for i in range(0, len(full_text), chunk_size)]
     return chunks
